@@ -12,21 +12,3 @@ Project page for the paper "Towards assessing compliant robotic grasping from fi
 The design and implementations will be open-sourced soon. Please refer to the paper (https://arxiv.org/abs/2312.14466) for more details.
 
 [![Watch the video](https://img.youtube.com/vi/kQSZlNxYRrs/0.jpg)](https://www.youtube.com/watch?v=kQSZlNxYRrs)
-
-
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-"README.md" 31L, 880B                                                                                                     31,3          All

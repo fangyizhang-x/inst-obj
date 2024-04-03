@@ -20,6 +20,8 @@ The full results for the other four faces can be seen in [detailed_results_for_t
 ## Comparison to Other Methods for Contact Estimation
 ![Neural Networks vs Linear Regression](method_comp.png)
 
+The linear regression has very poor performance in all metrics, indicating it is not suitable for this contact estimation task.
+
 ## Limitations and Future Outlook
 The current design generally worked well in contact estimation, although there were some design drawbacks that caused non-trivial performance degradation with simultaneous contacts from multiple faces and the internal core shifting w.r.t. the silicone shell between calibration and evaluation.
 

@@ -33,5 +33,5 @@ To be used for assessing soft robotic grippers/hands, the design might need to b
 - denser sensors or more effective sensor layouts for detecting more complicated contacts (e.g., large contact areas that cover many more than three pixels), and
 - a softer outer shell to be more sensitive to subtle deformations (depending on how compliant the grippers/hands are).
 
-## Use for assessing grasping by anthropomorphic robotic hands
+### Use for assessing grasping by anthropomorphic robotic hands
 This instrumented object can be extended for assessing grasping by anthropomorphic robotic hands, but needs additional training data to cover situations different from the three types of probes currently used for training data collection. For better and stabler performance, the current design also needs to be optimized to eliminate the Problems a) and b) discussed in Section VII in the [paper](https://arxiv.org/abs/2312.14466).

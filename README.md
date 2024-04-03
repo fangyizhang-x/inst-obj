@@ -15,10 +15,10 @@ Please refer to the paper (https://arxiv.org/abs/2312.14466) for more details.
 
 For fabrication details, please refer to the [fabrication readme](Fabrication_Readme.md).
 
-The full results for the other four faces can be seen in [detailed results for the other four faces.pdf](detailed results for the other four faces.pdf).
+The full results for the other four faces can be seen in [detailed_results_for_the_other_four_faces.pdf](detailed_results_for_the_other_four_faces.pdf).
 
 ## Comparison to Other Methods for Contact Estimation
-![Neural Networks vs Linear Regression](.method_comp.png)
+![Neural Networks vs Linear Regression](method_comp.png)
 
 ## Limitations and Future Outlook
 The current design generally worked well in contact estimation, although there were some design drawbacks that caused non-trivial performance degradation with simultaneous contacts from multiple faces and the internal core shifting w.r.t. the silicone shell between calibration and evaluation.

@@ -15,6 +15,8 @@ Please refer to the paper (https://arxiv.org/abs/2312.14466) for more details.
 
 For fabrication details, please refer to the [fabrication readme](Fabrication_Readme.md).
 
+For the contact estimation, codes are in [Contact_Estimation](Contact_Estimation). Datasets will be released  soon.
+
 The full results for the other four faces can be seen in [detailed_results_for_the_other_four_faces.pdf](detailed_results_for_the_other_four_faces.pdf).
 
 ## Comparison to Other Methods for Contact Estimation

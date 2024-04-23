@@ -1,0 +1,44 @@
+# Config for Face3 general performance
+dataset:
+  - name: single_probe
+    csv_path: ../data/Internal_shell/Single_Probe/Single_probe_internal_shell_data.csv
+    force_ind: 2
+    face_ind: 0
+    faces: [3]
+    loc_inds: [1]
+    hall_ind0: 3
+    hall_ind1: 12
+    case_ind: 1
+    novel_inds: []
+  - name: double_probe
+    csv_path: ../data/Internal_shell/Double_probe/Internal_Shell_dual_probe_data.csv
+    force_ind: 2
+    face_ind: 0
+    faces: [3]
+    loc_inds: [12,13]
+    hall_ind0: 3
+    hall_ind1: 12
+    case_ind: 1
+    novel_inds: []
+  - name: triple_probe
+    csv_path: ../data/Internal_shell/Triple_probe/Internal_Shell_triple_probe_data.csv
+    force_ind: 2
+    face_ind: 0
+    faces: [3]
+    loc_inds: [12,13,14]
+    hall_ind0: 3
+    hall_ind1: 12
+    case_ind: 1
+    novel_inds: []
+model:
+    hidden_size: [600,2000,2000,2000]
+optimizer:
+    initial_lr: 0.001
+    seed: 2
+train:
+    batch_size: 2000
+    epochs: 1000
+evaluate:
+    batch_size: 1000
+result:
+    path: ../data/Internal_shell/all_denser_no_unseen/results

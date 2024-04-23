@@ -1,0 +1,45 @@
+# Config for real tests (Face1, Face2, Face3, and Face5)
+faces: [3,5]
+non_contact_info:
+    faces: [1,2]
+    hall_ind0s: [21,30]
+    hall_ind1s: [29,38]
+    force_inds: [1,2]
+    cal_zero_ref: True
+dataset:
+  - name: single_probe
+    csv_path: ../data/Internal_shell/test_data_panda_gripper/1probe.csv
+    force_inds: [1,2]
+    face_inds: [48,50]
+    loc_inds: [[49],[51]]
+    hall_ind0s: [12,3]
+    hall_ind1s: [20,11]
+    cal_zero_ref: True
+  - name: double_probe
+    csv_path: ../data/Internal_shell/test_data_panda_gripper/2probe.csv
+    force_inds: [1,2]
+    face_inds: [48,51]
+    loc_inds: [[49,50],[52,53]]
+    hall_ind0s: [12,3]
+    hall_ind1s: [20,11]
+    cal_zero_ref: True
+  - name: triple_probe
+    csv_path: ../data/Internal_shell/test_data_panda_gripper/3probe.csv
+    force_inds: [1,2]
+    face_inds: [48,52]
+    loc_inds: [[49,50,51],[53,54,55]]
+    hall_ind0s: [12,3]
+    hall_ind1s: [20,11]
+    cal_zero_ref: True
+model:
+    hidden_size: [600,2000,2000,2000]
+optimizer:
+    initial_lr: 0.001
+    seed: 2
+train:
+    batch_size: 2000
+    epochs: 1000
+evaluate:
+    batch_size: 1000
+result:
+    path: ../data/Internal_shell/all_denser_no_unseen_zero_ref/results

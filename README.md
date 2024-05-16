@@ -15,7 +15,7 @@ Please refer to the paper (https://arxiv.org/abs/2312.14466) for more details.
 
 For fabrication details, please refer to the [fabrication readme](Fabrication_Readme.md).
 
-For the contact estimation, codes are in [Contact_Estimation](Contact_Estimation). Datasets will be released  soon.
+For the contact estimation, codes and data are in [Contact_Estimation](Contact_Estimation).
 
 The full results for the other four faces can be seen in [detailed_results_for_the_other_four_faces.pdf](detailed_results_for_the_other_four_faces.pdf).
 
@@ -24,6 +24,9 @@ The full results for the other four faces can be seen in [detailed_results_for_t
 ![Neural Networks vs Linear Regression](method_comp.png)
 
 A comparison was made to a baseline linear regression method, whose results are shown in the above table. The linear regression has very poor performance in all metrics, indicating it is not suitable for modeling such complex non-linear mapping from Hall-effect signals to contact forces. The fully-connected network used in this work is just a proof of concept for data-driven contact estimation via Hall-effect signals. We do not claim the optimality of the neural network used in the paper and it is worth exploring more appropriate machine learning methods for different observations in future works and all feasible solutions will help scale the application of instrumented compliant objects for robotic grasping performance assessment.
+
+## Training Data Collection: Balancing the spatial and temporal coverage of training data
+As discussed in Section VII, studies in Section V-E and Section V-F showed that the location coverage of training data is critical for better contact location/case estimation accuracy, while much less data (2683 samples in total, and about 19 samples for each contact location/case) can enable accurate contact force estimation. In future training/calibration data collection, a better balance can be achieved by collecting less data for each contact location/case but covering as many contact locations and numbers of contacts as possible.
 
 ## Other Designs
 As introduced in the Introduction of the [paper](https://arxiv.org/abs/2312.14466), this work is motivated to assess robotic grasping of compliant objects by measuring the stress or damage from a first-object perspective using mock objects (instrumented compliant objects). From a mock-compliant object perspective, the possibility of extending a design for different properties (such as hardness and shapes) and for providing different observations (such as contact force, deformation, and shape changes) is critical. Therefore, as a proof of concept, this paper adopts:
